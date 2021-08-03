@@ -1,0 +1,60 @@
+<br>
+<div class="bg-6">
+  <div class="glitch" data-text="UPT">PROVEEDORES</div>
+</div>
+
+<table cellpadding="0">
+    <thead> 
+        <th>Id proveedor</th>
+        <th>Nombre</th>
+        <th>Nombre de usuario</th>
+        <th>Correo electrónico</th>
+        <th>Celular</th>
+        <th>Sitio web</th>
+        <th>Foto de proveedor</th>
+    </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ul *ngFor="let mensaje of mensajes" class="list-group-item" class="list-group">
+              <li>{{mensaje.id}}</li> 
+            </ul>
+          </td>
+          
+            <td>
+              <ul *ngFor="let mensaje of mensajes" class="list-group-item" class="list-group">
+                <li>{{mensaje.name}}</li>
+              </ul> 
+            </td> 
+          
+            <td>
+              <ul *ngFor="let mensaje of mensajes" class="list-group-item" class="list-group">
+                <li>{{mensaje.username}}</li>
+              </ul>
+            </td>
+            <td>
+              <ul *ngFor="let mensaje of mensajes" class="list-group-item" class="list-group">
+                <li>{{mensaje.email}}</li>
+              </ul>
+            </td>
+            <td>
+              <ul *ngFor="let mensaje of mensajes" class="list-group-item" class="list-group">
+                <li>{{mensaje.phone}}</li> 
+              </ul>
+            </td>
+             <td>
+              <ul *ngFor="let mensaje of mensajes" class="list-group-item" class="list-group">
+                <li>{{mensaje.website}}</li>  
+              </ul>
+             </td> 
+               <td>
+                <img src="../assets/img/pro1.jpg" class='imgRedonda' alt="" >
+                <img src="../assets/img/pro2.jpg" class='imgRedonda' alt="" >
+                <img src="../assets/img/pro3.jpg" class='imgRedonda' alt="" >               
+               </td>         
+        </tr>
+  </tbody>   
+</table>
+
+
+  

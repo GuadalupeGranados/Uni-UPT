@@ -1,0 +1,9 @@
+<h1>Suma</h1>
+<div class="container">
+    <input class ="form-label" type="number" name="number1" id="num1">
+    <input class ="form-label" type="number" name="number2" id="num2">
+    <button (click)="suma()">SUMAR</button>
+</div>
+<ul *ngFor="let mensaje of mensajes" class="list-group-item" class="list-group">
+    <li>{{mensaje.resultado}}</li>        
+</ul>

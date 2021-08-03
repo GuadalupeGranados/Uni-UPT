@@ -1,0 +1,153 @@
+figure{
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgb(243, 118, 17);
+    margin: 0;
+    overflow: hidden;
+}
+figcaption{
+    transition: all 0.3s;
+    color: papayawhip;
+    
+    position: absolute;
+    left: 0px;
+    background:rgb(0,0,0, 0.7);
+    bottom: -150px;
+    width: 100%;
+    padding: 5%;
+    
+}
+figure:hover figcaption{
+    bottom: 0px;
+}
+
+
+
+.bg-6{
+    background-color: #f36b1d;
+}
+
+.glitch {
+    color: white;
+    font-size: 90px;
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    font-family: 'Varela', sans-serif;
+ }
+
+.glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 16px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: white;
+    background: rgb(240, 103, 12);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    
+}
+
+.glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 8px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: white;
+    background: rgb(240, 134, 13);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+ 
+
+
+.bg-5{
+    background: linear-gradient(135deg, rgb(252, 250, 250)0%,rgb(248, 249, 250)90%);
+   
+   }
+   .animated-shadow{
+       color:orangered;
+       font: normal 120px Varela Round, sans-serif;
+       height: 120px;
+       left: 0;
+       letter-spacing: 5px;
+       text-align: center;
+       text-transform: uppercase;
+       width: 90%;
+       animation: move linear 200ms infinite;
+       z-index: 2;
+   }
+   
+   @keyframes move{
+       0%{
+           text-shadow: 
+           4px -4px 0 #f00c0c,
+           3px -3px 0 #f51414,
+           2px -2px 0 #da0606,
+           1px -1px 0 #da0606,
+           -4px 4px 0 #3bfa0b,
+           -3px 3px 0 #68fc13,
+           -2px 2px 0 #76f70c,
+           -1px 1px 0 #49fc13
+           ;
+       }
+   
+       25%{
+           text-shadow: 
+           -4px 4px 0 #68fc13,
+           -3px 3px 0 #7cfc13,
+           -2px 2px 0 #70fc13,
+           -1px 1px 0 #49fc13,
+           4px 4px 0 #da0606,
+           3px 3px 0 #da0606,
+           2px 2px 0 #da0606,
+           1px 1px 0 #da0606
+           ;
+       }
+   
+       50%{
+           text-shadow: 
+           -4px 4px 0 #da0606,
+           -3px 3px 0 #da0606,
+           -2px 2px 0 #da0618,
+           -1px 1px 0 #da0606,
+           4px 4px 0 #5dfc13,
+           3px 3px 0 #26fc13,
+           2px 2px 0 #2efc13,
+           1px 1px 0 #49fc13
+           ;
+   
+       }
+       75%{
+           text-shadow:
+           4px 4px 0 #70fc13,
+           3px 3px 0 #3afc13,
+           2px 2px 0 #8ffc13,
+           1px 1px 0 #49fc13,
+           -4px 4px 0 #da0606,
+           -3px 3px 0 #da0606,
+           -2px 2px 0 #da0606,
+           -1px 1px 0 #da0606
+           ;
+       }
+   
+       100%{
+           text-shadow: 
+           4px 4px 0 #da0606,
+           3px 3px 0 #da0606,
+           2px 2px 0 #da0606,
+           1px 1px 0 #da0606,
+           -4px 4px 0 #5dfc13,
+           -3px 3px 0 #49fc13,
+           -2px 2px 0 #55fc13,
+           -1px 1px 0 #55fc13
+           ;
+       }
+   }
+
+p.monos1{ font-family: monospace;}
+  
